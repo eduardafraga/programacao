@@ -1,0 +1,62 @@
+#tudo {
+    border: 10px;
+    height: 1000px;
+    display: grid;
+    grid-template-areas: 
+    "cima cima cima cima"
+    "descricao descricao descricao descricao"
+    "band1 band2 band3 band4"
+    ;
+    grid-template-rows: 100px 100px 100px 100px ;
+    grid-template-columns: 100px 1fr 1fr 100px ;
+}
+
+*{
+    border: 10px grey;
+}
+
+.cima {
+    background-color: aqua;
+    grid-area: cima;
+}
+
+body {
+    background-color: rgb(104, 97, 97);
+    opacity: 0.5;
+}
+
+h5 {
+    font-style: italic;
+    color: azure;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.band1 {
+ background-color: aliceblue;
+ grid-area: band1;
+}
+
+.band2 {
+background-color: aliceblue;
+grid-area: band2;
+height: 500px;
+}
+
+.band3 {
+    background-color: aliceblue;
+    grid-area: band3;
+    height: 500px;
+}
+
+.band4 {
+    background-color: aliceblue;
+    grid-area: band4;
+    width: 100px;
+    height: 500px;
+}
+
+.descricao{
+    background-color: aliceblue;
+    grid-area: descricao;
+}
